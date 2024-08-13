@@ -1,0 +1,51 @@
+* {
+    background-color: black;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+    /* text-decoration:overline; */
+    text-decoration: overline;
+    text-shadow: 5px 5px #558ABB;
+}
+
+h1, h2 {
+    font-size: 90px;
+    font-weight: 900;
+    color: blanchedalmond;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#about {
+    text-align: right;
+}
+
+#experience-list {
+    /* list-style-type: trad-chinese-informal; */
+    display: flex;
+}
+
+#connect-list {
+    display: flex;
+}
+
+#connect-img {
+    width: 18px;
+}
+
+a:hover {
+  background: #558ABB;
+  text-decoration: line-through;
+}
+
+#header {
+    position: fixed;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
