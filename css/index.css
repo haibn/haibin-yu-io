@@ -1,32 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    background-color: black;
-    color: white;
-    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    margin: 5px;
 }
 
-h1 {
-    margin-bottom: 50px;
-    /* text-decoration:overline; */
-    text-decoration: overline;
-    text-shadow: 5px 5px #558ABB;
+.header{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1, h2 {
-    font-size: 90px;
-    font-weight: 900;
-    color: blanchedalmond;
+.header-name {
+    font-size: 25px;
+}
+
+.secondary-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
-    margin-bottom: 10px;
-}
-
-#about {
-    text-align: right;
+    margin: auto;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 #experience-list {
-    /* list-style-type: trad-chinese-informal; */
     display: flex;
 }
 
@@ -48,4 +52,42 @@ a:hover {
     background-color: blue;
     align-content: center;
     text-align: center;
+}
+
+
+/* media queries for phone */
+@media (min-width: 450px){
+    #about {
+        color: green;
+        font-weight: bold;
+    }
+    #experience {
+        color: gainsboro;
+        font-weight: bold;
+    }
+    #connect {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 760px){
+    #about {
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+        text-decoration: overline;
+    }
+    #experience {
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+        text-decoration: overline;
+    }
+    #connect {
+        color: black;
+        font-weight: 500;
+        font-size: smaller;
+        text-decoration: overline;
+    }
 }
