@@ -13,8 +13,35 @@ let skills = ["HTML", "CSS", "JS", "Python", "Java", "C", "SQL", "Github", "GIMP
 let skillsSection = document.querySelector("#skills");
 let skillsList = skillsSection.querySelector("ul");
 for (let i = 0; i < skills.length; i++) {
-    console.log(i);
     let skill = document.createElement("li");
     skill.textContent = skills[i];
     skillsList.appendChild(skill);
 }
+
+let messageForm = document.getElementsByName('leave_message')[0];
+
+function submitBtn(event) {
+    event.preventDefault();
+    let formName = messageForm.querySelector('input[name="usersName"]').value;
+    let formEmail = messageForm.querySelector('input[name="usersEmail"]').value;
+    let formMessage = messageForm.querySelector('textarea[name="usersMessage"]').value;
+    console.log(formName);
+    console.log(formEmail);
+    console.log(formMessage);
+    event.target.reset();
+    let messageSection = document.querySelector("#messages");
+    let messageList = messageSection.querySelector("ul");
+    let newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href=mailto:${formEmail}>${formEmail}</a> <span>${formMessage}</span>`;
+    
+    let removeButton = document.createElement("button");
+    removeButton.textContent = "remove";
+    removeButton.type = "button";
+    removeButton.addEventListener("click", function() {
+        let entry = this.parentNode;
+        entry.remove();
+    });
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+}
+messageForm.addEventListener("submit", submitBtn);
