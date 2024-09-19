@@ -45,3 +45,37 @@ function submitBtn(event) {
     messageList.appendChild(newMessage);
 }
 messageForm.addEventListener("submit", submitBtn);
+
+let projectSection = document.querySelector("#projects");
+let projectList = projectSection.querySelector("ul");
+
+fetch("https://api.github.com/users/haibn/repos")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(response.status);
+        }
+        return response.json();
+    })
+    .then(data => {
+        let repositories = data;
+        console.log(repositories);
+        for (let i = 0; i < repositories.length; i++) {
+            let project = document.createElement("li");
+            project.textContent = repositories[i].name;
+            projectList.append(project);
+        }
+    })
+    .catch(error => alert(error));
+
+
+
+// async function getGitHubUser() {
+//     try {
+//         let response = await fetch("https://api.github.com/users/haibn/repos");
+//         if (!response.ok) {
+//             throw new Error(response.status);
+//         }
+//     } catch(error) {
+//         alert(error);
+//     }
+// }
