@@ -67,15 +67,3 @@ fetch("https://api.github.com/users/haibn/repos")
     })
     .catch(error => alert(error));
 
-
-
-// async function getGitHubUser() {
-//     try {
-//         let response = await fetch("https://api.github.com/users/haibn/repos");
-//         if (!response.ok) {
-//             throw new Error(response.status);
-//         }
-//     } catch(error) {
-//         alert(error);
-//     }
-// }
