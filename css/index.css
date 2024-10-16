@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&display=swap');
 
 * {
-    background-color: white;
-    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    font-family: "Outfit", sans-serif;;
     text-align: justify;
     margin: 5px;
 }
+
+.body-container {
+    border:3px solid white;
+    height: 70%;
+    margin: 50px;
+}
+
+/* Header styling */
 
 .header{
     margin: 15px;
@@ -18,20 +29,93 @@
     font-size: 25px;
 }
 
-.secondary-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 h2 {
     margin: auto;
     font-weight: 500;
     font-size: 30px;
 }
 
-#experience-list {
+.container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.photo {
+    max-width: 50%;
+}
+
+.about-child {
+    flex: 1;
+    flex-shrink: 1;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Experience and projects styling */
+
+.experience-projects {
+    display: flex;
+    height: 40%;
+    width: 70%;
+}
+
+.experience-projects-child {
+    flex: 1;
+    margin: 20px;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Skills styling */
+
+#skills {
+    width: 80%;
+}
+
+.skills-heading {
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.form-messages {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#leave_message_form {
+    flex: 1;
+}
+
+#messages {
+    flex: 2;
 }
 
 #connect-list {
@@ -47,47 +131,31 @@ a:hover {
   text-decoration: line-through;
 }
 
-#header {
-    position: fixed;
-    background-color: blue;
-    align-content: center;
-    text-align: center;
-}
-
 
 /* media queries for phone */
-@media (min-width: 450px){
-    #about {
-        color: green;
-        font-weight: bold;
-    }
-    #experience {
-        color: gainsboro;
-        font-weight: bold;
-    }
-    #connect {
-        color: red;
-        font-weight: bold;
+@media (max-width: 450px){
+    .body-container {
+        margin: 20px;
     }
 }
 
-@media (min-width: 760px){
+@media (max-width: 770px){
     #about {
-        color: black;
-        font-weight: 500;
-        font-size: smaller;
-        text-decoration: overline;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
     }
-    #experience {
-        color: black;
-        font-weight: 500;
-        font-size: smaller;
-        text-decoration: overline;
+    .experience-projects {
+        display: flex;
+        flex-direction: column;
     }
-    #connect {
-        color: black;
-        font-weight: 500;
-        font-size: smaller;
-        text-decoration: overline;
+    .skills-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .skills-list li {
+        margin: 20px;
     }
 }

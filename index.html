@@ -19,72 +19,84 @@
         </nav>
     </div>
 
-    <section id="about">
-        <div class="secondary-header about-header">
-            <div class="secondary-header-child">Get to know more</div>
-            <h2>About Me</h2>
-        </div>
-        <p>
-            I was born in China and raised in Mexico. I moved to the United States as an unaccompanied child at the age of 16. I graduated from UC Berkeley with a degree in Computer Science in 2023. I am currently 
-            working on becoming a web designer. In my free time I like to hang out with friends, work out, play video games, 
-            and explore the city.
-        </p>
-    </section>
-
-    <section id="experience">
-        <div class="secondary-header experience-header">
-            <div class="secondary-header-child">Explore my</div>
-            <h2>Experience</h2>
-        </div>
-        <ul>
-            <li>CARECENs - Immigration Law Legal Assistant | July 2023 - Present <br> Help clients with different immigration applications: Work Permits, Status Adjustments, Naturalizations, etc</li>
-            <li>Refugee & Immigrant Transitions - Highschool and Middleschool Tutor | January 2024 - Present <br> Tutor ELD classes in a SFI International HighSchool and Visitation Valley Middleschool.</li>
-            <li>UCB USP Program - Web Developer | July 2023 - October 2023 <br> Created two apps through Google Apps Script and its Google Sheets API to retrieve and retrieve information from Google Sheets.</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul></ul>
-    </section>
-
-    <section id="connect">
-        <div class="secondary-header connect">
-            <div class="secondary-header-child">Let's get in touch</div>
-            <h2>Contact Me</h2>
-        </div>
-
-        <div id="connect-list">
-            <div>
-                <a href="https://www.instagram.com/haibny/" target="_blank">Instagram</a> <br>
-                <a href="https://www.linkedin.com/in/haibinyu/" target="_blank">LinkedIn</a> <br>
-                <a href="https://github.com/haibn" target="_blank">GitHub</a> 
+    <div class="container">
+        <section id="about" class="body-container">
+            <img class="photo about-child" src="assets/pfp.png">
+            <div class="about-child">
+                <div>
+                    <h2>About Me</h2>
+                </div>
+                <p>
+                    I was born in China and raised in Mexico. I moved to the United States as an unaccompanied child at the age of 16. I graduated from UC Berkeley with a degree in Computer Science in 2023. I am currently 
+                    working on becoming a web designer. In my free time I like to hang out with friends, work out, play video games, 
+                    and explore the city.
+                </p>
             </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul></ul>
-    </section>
-
-    <section id="leave_message_form">
-        <h2>Leave a message</h2>
-        <form name="leave_message">
-            <label>Name:</label>
-            <input type="text" name="usersName" required="true"> <br>
-            <label>Email:</label>
-            <input type="email" name="usersEmail" required="true"> <br>
-            <label>Message:</label> <br>
-            <textarea name="usersMessage" required="true"></textarea> <br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        </section>
     
-    <section id="messages">
-        <h2>Messages</h2>
-        <ul></ul>
-    </section>
+        <div class="experience-projects body-container body-container-experience"> 
+            <section id="experience" class="experience-projects-child">
+                <div>
+                    <h2>Experience</h2>
+                </div>
+                <ul>
+                    <li>CARECENs - Immigration Law Legal Assistant | July 2023 - Present <br> Help clients with different immigration applications: Work Permits, Status Adjustments, Naturalizations, etc</li>
+                    <li>Refugee & Immigrant Transitions - Highschool and Middleschool Tutor | January 2024 - Present <br> Tutor ELD classes in a SFI International HighSchool and Visitation Valley Middleschool.</li>
+                    <li>UCB USP Program - Web Developer | July 2023 - October 2023 <br> Created two apps through Google Apps Script and its Google Sheets API to retrieve and retrieve information from Google Sheets.</li>
+                </ul>
+            </section>
+    
+            <section id="projects" class="experience-projects-child">
+                <div>
+                    <h2>Projects</h2>
+                </div>
+                <ul></ul>
+            </section>
+        </div>
+    
+        <section id="skills">
+            <div>
+                <h2 class="skills-heading">Skills</h2>
+            </div>
+            <ul class="skills-list"></ul>
+        </section>
+    
+        <section id="connect" class="body-container">
+            <div class="secondary-header connect">
+                <div class="secondary-header-child">Let's get in touch</div>
+                <h2>Contact Me</h2>
+            </div>
+    
+            <div id="connect-list">
+                <div>
+                    <a href="https://www.instagram.com/haibny/" target="_blank">Instagram</a> <br>
+                    <a href="https://www.linkedin.com/in/haibinyu/" target="_blank">LinkedIn</a> <br>
+                    <a href="https://github.com/haibn" target="_blank">GitHub</a> 
+                </div>
+            </div>
+        </section>
+    
+        <div class="form-messages body-container">
+            <section id="leave_message_form">
+                <h2>Leave a message</h2>
+                <form name="leave_message">
+                    <label>Name:</label>
+                    <input type="text" name="usersName" required="true"> <br>
+                    <label>Email:</label>
+                    <input type="email" name="usersEmail" required="true"> <br>
+                    <label>Message:</label> <br>
+                    <textarea name="usersMessage" required="true"></textarea> <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            
+            <section id="messages">
+                <h2>Messages</h2>
+                <ul></ul>
+            </section>
+        </div>
+    </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
