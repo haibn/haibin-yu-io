@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
+    <!-- Header and nav bar -->
     <div class="header">
         <h1 class="header-name">Haibin Yu</h1>
         <nav class="header-nav">
@@ -19,7 +21,9 @@
         </nav>
     </div>
 
+    <!-- Wrap everything under a container for styling -->
     <div class="container">
+        <!-- About me section -->
         <section id="about" class="body-container">
             <img class="photo about-child" src="assets/pfp.png">
             <div class="about-child">
@@ -31,9 +35,18 @@
                     working on becoming a web designer. In my free time I like to hang out with friends, work out, play video games, 
                     and explore the city.
                 </p>
+                <!-- Connect section -->
+                <section id="connect">
+                    <div id="connect-list">
+                        <a href="https://www.instagram.com/haibny/" target="_blank" class="connect-links"><img src="assets/igWhite.png" class="connect-icons"></a>
+                        <a href="https://www.linkedin.com/in/haibinyu/" target="_blank" class="connect-links"><img src="assets/linkedin.jpg" class="connect-icons"></a>
+                        <a href="https://github.com/haibn" target="_blank" class="connect-links"><img src="assets/githubWhite.png" class="connect-icons"></a> 
+                    </div>
+                </section>
             </div>
         </section>
     
+        <!-- Experience and Projects section -->
         <div class="experience-projects body-container body-container-experience"> 
             <section id="experience" class="experience-projects-child">
                 <div>
@@ -54,6 +67,7 @@
             </section>
         </div>
     
+        <!-- Skills section -->
         <section id="skills">
             <div>
                 <h2 class="skills-heading">Skills</h2>
@@ -61,24 +75,12 @@
             <ul class="skills-list"></ul>
         </section>
     
-        <section id="connect" class="body-container">
-            <div class="secondary-header connect">
-                <div class="secondary-header-child">Let's get in touch</div>
-                <h2>Contact Me</h2>
-            </div>
-    
-            <div id="connect-list">
+        <!-- Messages section -->
+        <div class="form-messages">
+            <section id="leave_message_form" class="form-messages-child">
                 <div>
-                    <a href="https://www.instagram.com/haibny/" target="_blank">Instagram</a> <br>
-                    <a href="https://www.linkedin.com/in/haibinyu/" target="_blank">LinkedIn</a> <br>
-                    <a href="https://github.com/haibn" target="_blank">GitHub</a> 
+                    <h2>Leave a message</h2>
                 </div>
-            </div>
-        </section>
-    
-        <div class="form-messages body-container">
-            <section id="leave_message_form">
-                <h2>Leave a message</h2>
                 <form name="leave_message">
                     <label>Name:</label>
                     <input type="text" name="usersName" required="true"> <br>
@@ -90,7 +92,7 @@
                 </form>
             </section>
             
-            <section id="messages">
+            <section id="messages" class="form-messages-child">
                 <h2>Messages</h2>
                 <ul></ul>
             </section>

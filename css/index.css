@@ -35,6 +35,8 @@ h2 {
     font-size: 30px;
 }
 
+/* About me styling */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -59,6 +61,22 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+p {
+    margin-top: 20px;
+}
+
+/* Contact me styling */
+
+#connect-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-icons {
+    width: 40px;
 }
 
 /* Experience and projects styling */
@@ -104,26 +122,27 @@ h2 {
     margin: 20px;
 }
 
+/* Messages styling */
+
 .form-messages {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 70%;
 }
 
 #leave_message_form {
-    flex: 1;
-}
-
-#messages {
-    flex: 2;
-}
-
-#connect-list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#connect-img {
-    width: 18px;
+#messages h2 {
+    text-align: center;
+}
+
+
+.form-messages-child {
+    flex: 1;
 }
 
 a:hover {
@@ -143,9 +162,6 @@ a:hover {
     #about {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
     }
     .experience-projects {
         display: flex;
@@ -157,5 +173,12 @@ a:hover {
     }
     .skills-list li {
         margin: 20px;
+    }
+    .form-messages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
     }
 }
